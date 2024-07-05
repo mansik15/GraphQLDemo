@@ -1,5 +1,5 @@
-## Country List using GraphQl API
-To implement GraphQL in this app, I have used Apollo GraphQL, a popular GraphQL client for Android and Java.
+## Get Country List from GraphQL Server using Apollo Kotlin
+To implement GraphQL in this app, I have used Apollo GraphQL, a popular GraphQL client for Android and Java. This app basically connects to GraphQL server via Apollo SDK, fetch countries' data & display it in a UI using recyclerview.
 
 ### Steps
 - Add Apollo dependencies & plugins in your build.gradle.kts files
