@@ -62,7 +62,7 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.4.0")
 
     //Hilt
-    implementation("com.google.dagger:hilt-android:2.48")
+    implementation(libs.hilt)
     kapt("com.google.dagger:hilt-android-compiler:2.48")
 
     //GraphQL

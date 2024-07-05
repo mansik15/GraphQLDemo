@@ -6,6 +6,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.app.graphqldemo.databinding.ActivityMainBinding
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
@@ -27,6 +28,8 @@ class MainActivity : AppCompatActivity() {
         lifecycleScope.launch {
             viewModel.countriesResponse.observe(this@MainActivity) { countryResponse ->
                 Log.d("Name: ", countryResponse[0].name)
+                var countryAdapter = CountryAdapter(this@MainActivity, countryResponse)
+                binding.rvCountries.adapter = countryAdapter
             }
         }
 
