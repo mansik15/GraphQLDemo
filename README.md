@@ -10,5 +10,6 @@ To implement GraphQL in this app, I have used Apollo GraphQL, a popular GraphQL 
 - Handle UI updates
 
 > [!IMPORTANT]
-> GraphQL Apollo Docs: https://www.apollographql.com/docs/kotlin/<br>
-  To use GraphQL API & download schema.graphqls file: https://countries.trevorblades.com/
+> GraphQL Apollo Doc reference: https://www.apollographql.com/docs/kotlin/<br>
+  Download schema file from here: [SDL File] (https://studio.apollographql.com/sandbox/schema/sdl?selectedSchema=%23%40%21api%21%40%23)<br>
+  To use GraphQL API: https://countries.trevorblades.com/
