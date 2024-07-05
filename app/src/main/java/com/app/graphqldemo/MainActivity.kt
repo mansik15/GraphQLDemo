@@ -5,8 +5,6 @@ import android.util.Log
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import androidx.lifecycle.lifecycleScope
 import com.app.graphqldemo.databinding.ActivityMainBinding
 import dagger.hilt.android.AndroidEntryPoint
@@ -21,14 +19,14 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(binding.root)
 
-        viewModel.getCountries("EUR")
+        viewModel.getCountries("AS")
         setObservers()
     }
 
     private fun setObservers() {
         lifecycleScope.launch {
-            viewModel.countriesResponse.observe(this@MainActivity){ countryResponse ->
-//                Log.d("Name: ",countryResponse[0].name)
+            viewModel.countriesResponse.observe(this@MainActivity) { countryResponse ->
+                Log.d("Name: ", countryResponse[0].name)
             }
         }
 

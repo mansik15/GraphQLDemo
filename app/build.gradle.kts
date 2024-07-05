@@ -66,7 +66,10 @@ dependencies {
     kapt("com.google.dagger:hilt-android-compiler:2.48")
 
     //GraphQL
-    implementation("com.apollographql.apollo3:apollo-runtime:3.8.4")
+    implementation(libs.apollo)
+
+    //Gson
+    implementation (libs.gson)
 
     
 }
